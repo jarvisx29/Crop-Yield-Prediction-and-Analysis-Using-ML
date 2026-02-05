@@ -136,6 +136,5 @@ dmypy.json
 venv/
 __pycache__/
 .env
-*.csv
 *.png
 *.zip
