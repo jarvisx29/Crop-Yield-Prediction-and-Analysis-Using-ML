@@ -132,9 +132,17 @@ dmypy.json
 .vscode
 .DS_Store
 
-
 venv/
 __pycache__/
 .env
 *.png
 *.zip
+
+# Never commit — internal tooling files
+.claude/
+backend.log
+*.jsonl
+
+# Model artifacts — too large for GitHub (model.pkl is ~172MB)
+# Regenerate locally by running: python train_model.py
+model/
