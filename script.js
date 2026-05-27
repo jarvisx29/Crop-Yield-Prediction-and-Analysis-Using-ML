@@ -1,8 +1,10 @@
 // ============================================================
 // CONFIGURATION
 // ============================================================
-const API_URL     = 'http://localhost:5001/predict';
-const COMPARE_URL = 'http://localhost:5001/compare';
+const IS_LOCAL    = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const BACKEND     = IS_LOCAL ? 'http://localhost:5001' : 'https://YOUR-RENDER-APP.onrender.com';
+const API_URL     = BACKEND + '/predict';
+const COMPARE_URL = BACKEND + '/compare';
 
 // ============================================================
 // TRANSLATIONS
