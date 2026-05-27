@@ -2,7 +2,7 @@
 // CONFIGURATION
 // ============================================================
 const IS_LOCAL    = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-const BACKEND     = IS_LOCAL ? 'http://localhost:5001' : 'https://YOUR-RENDER-APP.onrender.com';
+const BACKEND     = IS_LOCAL ? 'http://localhost:5001' : 'https://crop-yield-prediction-and-analysis-using.onrender.com';
 const API_URL     = BACKEND + '/predict';
 const COMPARE_URL = BACKEND + '/compare';
 
